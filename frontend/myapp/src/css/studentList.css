@@ -1,0 +1,35 @@
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.student-table th, .student-table td {
+  padding: 1rem;
+  text-align: left;
+  font-family: 'Fredoka One', cursive;
+  border-bottom: 1px solid #cb37fc;
+}
+
+.student-table th {
+  background: rgb(245, 194, 194);
+  font-family: 'Righteous', cursive;
+  color: #000000;
+}
+
+.student-table tr:hover {
+  background: #d9d9d9;
+}
+
+.btn-primary{
+  display:inline-flex;
+  font-family: 'Righteous', cursive;
+  align-items:end;
+  margin: 0.5rem;
+}
+
+h1{
+  color: #ff0000;
+  font-weight: bold;
+  font-style: italic;
+}

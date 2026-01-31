@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-image: url("../asset/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 60%;                /* 50% width on desktop */
+  max-width: 1200px;         /* prevent it from being too wide */
+  margin: 2rem auto;         /* center horizontally */
+  padding: 2rem;
+  background: linear-gradient(135deg, #E6D7FF, #D9F1FF);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;    /* include padding in width calculation */
+  text-align: center;        /* center text inside */
+  overflow-x: auto;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .container {
+    width: 90%;   /* wider on mobile for better visibility */
+    margin: 1rem auto;   /* keep horizontally centered */
+    padding: 1rem;       /* smaller padding on small screens */
+  }
+
+  .login-form {
+    width: 90%;
+  }
+
+  .student-table {
+    font-size: 0.9rem;
+  }
+
+  .student-table th, .student-table td {
+    padding: 0.5rem;
+  }
+}

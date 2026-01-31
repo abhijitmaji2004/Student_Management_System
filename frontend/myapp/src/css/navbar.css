@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecb3c3;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.nav-band{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo{
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border: 50%;
+}
+
+.navbar h2 {
+  color: #060606;
+  font-family: 'Algerian', sans-serif;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-family: 'Righteous', cursive;
+  font-size: 1rem;
+  color: #1c1b1b;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f55cdb;
+}
+
+.btn-logout {
+  background: #89fb26;
+  color: rgb(12, 12, 12);
+  border: 0cap;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+  font-family: 'Baloo 2', cursive;
+}
+
+.btn-logout:hover {
+  background: #fd8e94;
+}
